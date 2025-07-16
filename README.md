@@ -34,20 +34,89 @@
 
 ---
 
-## 📁 Folder Structure
 
-```bash
+## 🗂️ Folder Structure
+
+```
+chatverse-fullstack-main/
 ├── backend/
 │   ├── src/
 │   ├── .env
-│   ├── package.json
-│
+│   └── package.json
 ├── frontend/
 │   ├── src/
 │   ├── public/
-│   ├── .env
-│   ├── package.json
-│
-├── .gitignore
-├── README.md
+│   └── package.json
+└── README.md
+```
+
+---
+
+## 🧑‍💻 Getting Started
+
+### 1. Clone the Repo
+
+```bash
+git clone https://github.com/your-username/linkline.git
+cd linkline
+```
+
+---
+
+### 2. Setup Backend
+
+```bash
+cd backend
+npm install
+```
+
+Create a `.env` file:
+
+```env
+PORT=5002
+MONGO_URI=your_mongo_uri
+JWT_SECRET=your_jwt_secret
+CLOUDINARY_CLOUD_NAME=your_cloud_name
+CLOUDINARY_API_KEY=your_api_key
+CLOUDINARY_API_SECRET=your_api_secret
+```
+
+Start the backend:
+
+```bash
+npm start
+```
+
+---
+
+### 3. Setup Frontend
+
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+---
+
+## 🌈 Themes
+
+The app includes over 30 pre-configured themes via DaisyUI. Users can switch themes in real-time through the settings panel.
+
+---
+
+
+## 🔐 Auth
+
+- JWT stored in HTTP-only cookies
+- Protected routes on the backend
+- Auth state managed with Zustand on the frontend
+
+---
+
+## 🖼️ Demo
+
+> Coming soon 
+
+---
 
